@@ -232,12 +232,12 @@ each type of sensor;
 4. The `darcys_velocity_averaged` is executed with a logging message that allows to know which type of sensor is this 
 Darcy´s velocity result;
 5. When successfully runned, the information is saved in a excel file named **Results.xlsx** that looks like this:
-     | Time | Flourscense | Uranine(mg/l) | ln(c/c0) | vf(m/s)   |
-|----|-----------|----------|----------|-------------|-------------|
-| 0  |0    | 2   | 0,001        |     -13,71        | 837038,04            |
-| 1  | 5    | 5   | 0,001       | -13,71 | 0,16 |
-| 2  | 10  | 7      | 0,001       | -13,71 | 0,083 |
-| 3  |20  | 39     | 40,07       | -3,11 | 0,012 |
-| 4  | 25 | 51    | 52,11       | -2,84 | 0,008 |
-| ...| ...   | ...   | ...        | ...           | ...           |;
+|    | Time | Flourscense | Uranine(mg/l) | ln(c/c0) | vf(m/s)   |
+|----|------|-------------|---------------|----------|-----------|
+| 0  | 0    | 2           | 0,001         |  -13,71  | 837038,04 |
+| 1  | 5    | 5           | 0,001         | -13,71   | 0,16      |
+| 2  | 10   | 7           | 0,001         | -13,71   | 0,083     |
+| 3  | 20   | 39          | 40,07         | -3,11    | 0,012     |
+| 4  | 25   | 51          | 52,11         | -2,84    | 0,008     |
+| ...| ...  | ...         | ...           | ...      |   ...     |
 7. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
