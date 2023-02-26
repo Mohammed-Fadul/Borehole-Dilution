@@ -207,21 +207,21 @@ there are information of the calibration for each sensor.
 Code Requirements: necessary to import logging, matplot and os libraries, and to inherit from the file plot_saver the function 
 save_plot.
 ```
-The `plotSensors2.py`generates the plots - based on the matplot library - that allows better analysis of
+The `plotSensors2.py`generates three plots - based on the matplot library - that allow better analysis of
 the given data. They are:
-* `sensors_plot`: the plot of Fluorescence vs Concentration for each sensor.
+* `sensors_plot`: function that generates the plot of Fluorescence vs Concentration for each sensor.
 
 ![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/SensorsPlot.png))
 
 **Fig 4*: Sensors Plot*
 
-* `time_concentration_plot`: plot of the Time vs Fluorescence for each sensor. 
+* `time_concentration_plot`: function that generates the plot of the Time vs Fluorescence for each sensor. 
 
 ![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/TimevsConcentration.png))
 
 **Fig 5*: Time vs Fluorescence Plot*
 
-* `velocity_plot`: the plot of the Darcy´s Velocity vs Time vs Fluorescence concentration for each sensor. 
+* `velocity_plot`: function that generates the plot of the Darcy´s Velocity vs Time vs Fluorescence concentration for each sensor. 
 
 ![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/VelocityvsConcentration.png))
 
