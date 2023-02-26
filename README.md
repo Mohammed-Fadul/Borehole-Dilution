@@ -98,27 +98,16 @@ The software requirements to successfully run this program and obtain the Darcy 
     scientific python
       - numpy
       - pandas
+      - os (Miscellaneous operating system interfaces)
+      - math
+      - typing
+      - sklearn
        
     plotting
       - matplotlib
-      - plotly
+      - pathlib
       
-    geospatial python
-      - alphashape
-      - earthpy
-      - gdal
-      - geopandas
-      - geojson
-      - h5py
-      - laspy
-      - mapclassify
-      - networkx
-      - pyshp
-      - rasterio
-      - rasterstats
-      - shapely
-      - tk
-
+      
 ### Obtaining results
 
 Upon meeting software requirements and getting all the python files in the local device, run the main script to get the velocity.
