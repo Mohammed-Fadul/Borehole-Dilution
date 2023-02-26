@@ -204,6 +204,7 @@ the given data. They are:
 :alt: Sensors Plot
 :name: Sensors Plot
 ```
+![Sensors Plot](Sensors Plot.png)
 
 * `time_concentration_plot`: generates the plot of the Time vs Fluorescence for each sensor. 
 ## PLOT PICTURE 
