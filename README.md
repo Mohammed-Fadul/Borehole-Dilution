@@ -233,7 +233,7 @@ each type of sensor;
 Darcy´s velocity result;
 5. When successfully runned, the information is saved in a excel file named **Results.xlsx** that looks like this:
 
-|    | Time | Flourscense | Uranine(mg/l) | ln(c/c0) | vf(m/s)   |
+|    | Time | Flourescense | Uranine(mg/l) | ln(c/c0) | vf(m/s)   |
 |----|------|-------------|---------------|----------|-----------|
 | 0  | 0    | 2           | 0,001         |  -13,71  | 837038,04 |
 | 1  | 5    | 5           | 0,001         | -13,71   | 0,16      |
