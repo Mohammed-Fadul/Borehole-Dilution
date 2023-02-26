@@ -200,11 +200,8 @@ The `plotSensors2.py`provides us the generation of plots - based on the matplot 
 the given data. They are:
 * `sensors_plot`: generates the plot of Fluorescence vs Concentration for each sensor.
 
-```{figure} https://github.com/Mohammed-Fadul/Borehole-Dilution-Test/blob/e0236d5cfe7cf41a1b5539857381d0ac15ad4127/Sensors%20Plot.png
-:alt: Sensors Plot
-:name: Sensors Plot
-```
-![Sensors Plot](Sensors Plot.png)
+![alt text](Sensors Plot.png)
+**Fig 4*: Sensors Plot*
 
 * `time_concentration_plot`: generates the plot of the Time vs Fluorescence for each sensor. 
 ## PLOT PICTURE 
