@@ -79,7 +79,7 @@ Through this program, we want
 
 The structure of the code is as follows:
 
-![alt text](flowchart(new).jpg)
+
 
 ### Software Requirements
 
@@ -122,7 +122,7 @@ calculations needed for the calculation of Darcy´s velocity.
 
 The relation among the classes and functions are according to the following diagram:
 
-## diagram photo here
+![alt text](flowchart(new).jpg)
 
 ### LOGGING FUNCTIONS
 ```{admonition} Challenge
