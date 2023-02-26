@@ -131,16 +131,16 @@ Also, the graphs generating from the given data are saved in the folder SamplePl
 The object-oriented codes use custom classes that are called within a `main.py` script which calculates the Darcy´s 
 velocity average. The code is based on custom classes and functions that are defined as the following:
 
-* `checker.py` that contains logging functions.
+* `checker.py`: contains logging functions.
 
-* `tracertests.py` contains a Tracer class to read the basic elements of borehole test from field data and make basic dimension
+* `tracertests.py`: contains a Tracer class to read the basic elements of borehole test from field data and make basic dimension
 calculations needed for the calculation of Darcy´s velocity.
 
-* `sensor_data_file.py` that contains the DataSheet, Calibration and SensorPairData classes to read the data from the 
+* `sensor_data_file.py`:contains the DataSheet, Calibration and SensorPairData classes to read the data from the 
 sensors.
 
-* `plotSensors2.py` that contains the functions for the plots calculation: sensors plot, time concentration plot and 
-velocity plot.
+* `plotSensors2.py`:contains the functions for the plots calculation: sensors plot, time concentration plot and 
+velocity plots
 
 The relation among the classes and functions are according to the following diagram:
 
@@ -150,41 +150,41 @@ The relation among the classes and functions are according to the following diag
 ```{admonition} Challenge
 Code Requirements: necessary to import the logging.
 ```
-the `checker.py` contain two functions:
-1. `log_parameters` - it contains all the logging formats and characteristics. 
-2. `logger` - this is a function wrapper for the main() functions that are going to execute log messages throughout 
+the `checker.py` is made of two functions:
+1. `log_parameters`:contains all the logging formats and characteristics; 
+2. `logger`: this is a function wrapper for the main() functions that are going to execute log messages throughout 
 the code.
 
 ### FIELD DATA 
 ```{admonition} Challenge
-Code Requirements: necessary import the numpy and the logging_parameters function from the checker.py file.
+Code Requirements: necessary to import the numpy, and to take the logging_parameters function from the checker.py file.
 ```
 The `tracertests.py` provides us variables and methods, which are relevant to Darcy´s velocity calculation. 
 In the class `Tracer`, all the constant data taken from the local site test is found. They include: 
-* Drilling´s and well´s diameter
-* Well´s head above ground level
-* Top of gravel pack below ground level
-* Top of filter screen below ground level
-* Bottom of well below ground level
-* Depth of filter below well´s head
-* Water table below well´s head
-* Initial concentration of the tracer in the well
-* Permeability of the gravel pack
-* Permeability of the aquifer formation
+* Drilling´s and well´s diameter;
+* Well´s head above ground level;
+* Top of gravel pack below ground level;
+* Top of filter screen below ground level;
+* Bottom of well below ground level;
+* Depth of filter below well´s head;
+* Water table below well´s head;
+* Initial concentration of the tracer in the well;
+* Permeability of the gravel pack;
+* Permeability of the aquifer formation;
 * Accuracy of the fluorescence sensor.
 
 By these information, we are able to execute calculations found in the different functions within the Tracer class.
-* Top gravel pack (`top_gravel_pack`): distance from the wellhead to the top of the gravel pack 
-* Top filter screen (`top_filter_screen`): distance from the wellhead to the top of the filter screen 
-* Water head (`water_head`): profile of the water in the well measured from the bottom of the well 
-* Volume in well (`volume_in_well`): the volume of the water in the well 
-* Area of flow (`area_of_flow`): are perpendicular to the flow direction 
-* Calculate alpha (`calculate_alpha`): correction factor borehole horizontal flow rate Qb and aquifer horizontal flow rate Qf 
-* Calculate vf (`calculate_vf`): area of the screen filter 
+* Top gravel pack (`top_gravel_pack`): distance from the wellhead to the top of the gravel pack;
+* Top filter screen (`top_filter_screen`): distance from the wellhead to the top of the filter screen;
+* Water head (`water_head`): profile of the water in the well measured from the bottom of the well;
+* Volume in well (`volume_in_well`): the volume of the water in the well;
+* Area of flow (`area_of_flow`): are perpendicular to the flow direction;
+* Calculate alpha (`calculate_alpha`): correction factor borehole horizontal flow rate Qb and aquifer horizontal flow rate Qf;
+* Calculate vf (`calculate_vf`): area of the screen filter.
 
 ### SENSORS DATA 
 ```{admonition} Challenge
-Code Requirements: necessary to import the logging, pandas, numpy, typing and sklearn libraries, and inherit the file_utils 
+Code Requirements: necessary to import the logging, pandas, numpy, typing and sklearn libraries, and to inherit the file_utils 
 from the BaseFile in __init__.py (packet base_files).
 ```
 The provided Sensors data is stored in the xlsx workbook **All_Data.xlsx** and it contains the following information:
@@ -215,24 +215,24 @@ there are information of the calibration for each sensor.
 
 ### PLOTS 
 ```{admonition} Challenge
-Code Requirements: necessary to import logging, matplot and os libraries, and inherit from the file plot_saver the function 
+Code Requirements: necessary to import logging, matplot and os libraries, and to inherit from the file plot_saver the function 
 save_plot.
 ```
-The `plotSensors2.py`provides us the generation of plots - based on the matplot library - that allow better analysis of
+The `plotSensors2.py`generates the plots - based on the matplot library - that allows better analysis of
 the given data. They are:
-* `sensors_plot`: generates the plot of Fluorescence vs Concentration for each sensor.
+* `sensors_plot`: the plot of Fluorescence vs Concentration for each sensor.
 
 ![alt text](SensorsPlot.png)
 
 **Fig 4*: Sensors Plot*
 
-* `time_concentration_plot`: generates the plot of the Time vs Fluorescence for each sensor. 
+* `time_concentration_plot`: plot of the Time vs Fluorescence for each sensor. 
 
 ![alt text](TimevsConcentration.png)
 
 **Fig 5*: Time vs Fluorescence Plot*
 
-* `velocity_plot`: generates the plot of the Darcy´s Velocity vs Time vs Fluorescence concentration for each sensor. 
+* `velocity_plot`: the plot of the Darcy´s Velocity vs Time vs Fluorescence concentration for each sensor. 
 
 ![alt text](VelocityvsConcentration.png)
 
@@ -245,7 +245,7 @@ NOTES:
 
 ### DARCY´S VELOCITY CALCULATION 
 ```{admonition} Challenge
-Code Requirements: necessary to import pandas and math libraries, and inherit from the tracertests, sensor_data_file, 
+Code Requirements: necessary to import pandas and math libraries, and to inherit from the tracertests, sensor_data_file, 
 plotSensors2 and checker the necessary functions. 
 ```
 The darcy´s velocity is calculated in the `main.py` script. In this file we can find: 
