@@ -231,6 +231,5 @@ are excluded giving a 50% of range.
 each type of sensor;
 4. The `darcys_velocity_averaged` is executed with a logging message that allows to know which type of sensor is this 
 Darcy´s velocity result;
-5. The information is saved in a excel file named **Results**;
+5. When successfully runned, the information is saved in a excel file named **Results.xlsx**;
 6. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
-
