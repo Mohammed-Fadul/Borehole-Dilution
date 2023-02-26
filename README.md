@@ -126,7 +126,7 @@ The relation among the classes and functions are according to the following diag
 
 ### LOGGING FUNCTIONS
 ```{admonition} Challenge
-Code Requirements: necessary import the logging.
+Code Requirements: necessary to import the logging.
 ```
 the `checker.py` contain two functions:
 1. `log_parameters` - it contains all the logging formats and characteristics. 
