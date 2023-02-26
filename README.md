@@ -126,9 +126,9 @@ Also, the graphs generating from the given data are saved in the folder SamplePl
 
 ## Code 
 
-### Set the Frame 
+### Scripts  
 
-The object-oriented code will use custom classes that are called within a `main.py` script which calculated the darcy´s 
+The object-oriented codes use custom classes that are called within a `main.py` script which calculates the Darcy´s 
 velocity average. The code is based on custom classes and functions that are defined as the following:
 
 * `checker.py` that contains logging functions.
