@@ -136,7 +136,7 @@ The relation among the classes and functions are according to the following diag
 ![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/flowchart(new).jpg)
 
 ### LOGGING FUNCTIONS
-```{admonition} Challenge
+```{admonition} Code Requirements
 Code Requirements: necessary to import the logging.
 ```
 the `checker.py` is made of two functions:
@@ -145,7 +145,7 @@ the `checker.py` is made of two functions:
 the code.
 
 ### FIELD DATA 
-```{admonition} Challenge
+```{admonition} 
 Code Requirements: necessary to import the numpy, and to take the logging_parameters function from the checker.py file.
 ```
 The `tracertests.py` provides us variables and methods, which are relevant to Darcy´s velocity calculation. 
@@ -172,7 +172,7 @@ By these information, we are able to execute calculations found in the different
 * Calculate vf (`calculate_vf`): area of the screen filter.
 
 ### SENSORS DATA 
-```{admonition} Challenge
+```{admonition} 
 Code Requirements: necessary to import the logging, pandas, numpy, typing and sklearn libraries, and to inherit the file_utils 
 from the BaseFile in __init__.py (packet base_files).
 ```
@@ -194,7 +194,7 @@ The provided Sensors data is stored in the xlsx workbook **All_Data.xlsx** and i
 | ...              | ...              |
 
 The dilution time vs fluorescense table is located in the **Data DC** and **Data FC** sheet, giving information of each 
-sensor test. While, Flourescense vs Uranine table are located in the **DC calibration** and **FC calibration** sheet which 
+sensor test. While, Flourescense vs Uranine table is located in the **DC calibration** and **FC calibration** sheet which 
 there are information of the calibration for each sensor. 
 
 * DataSheet: 
@@ -203,7 +203,7 @@ there are information of the calibration for each sensor.
 * Basefile 
 
 ### PLOTS 
-```{admonition} Challenge
+```{admonition} 
 Code Requirements: necessary to import logging, matplot and os libraries, and to inherit from the file plot_saver the function 
 save_plot.
 ```
@@ -233,7 +233,7 @@ correctly saved in the -named given - folder. It also returns logging informatio
 NOTES: 
 
 ### DARCY´S VELOCITY CALCULATION 
-```{admonition} Challenge
+```{admonition} 
 Code Requirements: necessary to import pandas and math libraries, and to inherit from the tracertests, sensor_data_file, 
 plotSensors2 and checker the necessary functions. 
 ```
