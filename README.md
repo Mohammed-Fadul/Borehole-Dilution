@@ -94,13 +94,13 @@ The software requirements to successfully run this program and obtain the Darcy 
       - pip
       - tabulate
       - ipykernel
-    # scientific python
+#### scientific python
       - numpy
       - pandas
-    # plotting
+#### plotting
       - matplotlib
       - plotly
-    # geospatial python
+#### geospatial python
       - alphashape
       - earthpy
       - gdal
