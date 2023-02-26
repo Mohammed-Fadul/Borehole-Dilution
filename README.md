@@ -82,7 +82,39 @@ The software requirements to successfully run this program and obtain the Darcy 
 
 1. Python 3.9.16 or more recent versions
 2. pip 22.3.1
-3. Non standard Python libraries: pathlib, logging, pandas, numpy, typing, sklearn, matplotlib, math
+3. Virtual environment: flussenv
+    channels:
+      - conda-forge
+      - defaults
+      - blaze
+      - anaconda
+
+    dependencies:
+      - python>=3.8
+      - pip
+      - tabulate
+      - ipykernel
+    # scientific python
+      - numpy
+      - pandas
+    # plotting
+      - matplotlib
+      - plotly
+    # geospatial python
+      - alphashape
+      - earthpy
+      - gdal
+      - geopandas
+      - geojson
+      - h5py
+      - laspy
+      - mapclassify
+      - networkx
+      - pyshp
+      - rasterio
+      - rasterstats
+      - shapely
+      - tk
 
 ### Obtaining results
 
