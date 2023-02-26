@@ -133,7 +133,7 @@ velocity plots
 
 The relation among the classes and functions are according to the following diagram:
 
-![alt text](flowchart(new).jpg)
+![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/flowchart(new).jpg)
 
 ### LOGGING FUNCTIONS
 ```{admonition} Challenge
@@ -211,19 +211,19 @@ The `plotSensors2.py`generates the plots - based on the matplot library - that a
 the given data. They are:
 * `sensors_plot`: the plot of Fluorescence vs Concentration for each sensor.
 
-![alt text](SensorsPlot.png)
+![alt text]([SensorsPlot.png](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/SensorsPlot.png))
 
 **Fig 4*: Sensors Plot*
 
 * `time_concentration_plot`: plot of the Time vs Fluorescence for each sensor. 
 
-![alt text](TimevsConcentration.png)
+![alt text]([TimevsConcentration.png](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/TimevsConcentration.png))
 
 **Fig 5*: Time vs Fluorescence Plot*
 
 * `velocity_plot`: the plot of the Darcy´s Velocity vs Time vs Fluorescence concentration for each sensor. 
 
-![alt text](VelocityvsConcentration.png)
+![alt text]([VelocityvsConcentration.png](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/VelocityvsConcentration.png))
 
 **Fig 6*: Darcy´s Velocity vs Time vs Fluorescence Plot*
 
