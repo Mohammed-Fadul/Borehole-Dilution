@@ -200,13 +200,18 @@ The `plotSensors2.py`provides us the generation of plots - based on the matplot 
 the given data. They are:
 * `sensors_plot`: generates the plot of Fluorescence vs Concentration for each sensor.
 
-![alt text](Sensors Plot.png)
+![alt text](SensorsPlot.png)
 **Fig 4*: Sensors Plot*
 
 * `time_concentration_plot`: generates the plot of the Time vs Fluorescence for each sensor. 
-## PLOT PICTURE 
+
+![alt text](TimevsConcentration.png)
+**Fig 5*: Time vs Fluorescence Plot*
+
 * `velocity_plot`: generates the plot of the Darcy´s Velocity vs Time vs Fluorescence concentration for each sensor. 
-## PLOT PICTURE 
+
+![alt text](VelocityvsConcentration.png)
+**Fig 6*: Darcy´s Velocity vs Time vs Fluorescence Plot*
 
 The `plotSensors2.py` inherits the `plot_saver.py` which contains the function `save_plot` that allows the plot to be 
 correctly saved in the -named given - folder. It also returns logging information in case of exceptions. 
