@@ -211,7 +211,7 @@ The `plotSensors2.py`generates the plots - based on the matplot library - that a
 the given data. They are:
 * `sensors_plot`: the plot of Fluorescence vs Concentration for each sensor.
 
-![alt text]([SensorsPlot.png](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/SensorsPlot.png))
+![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/SensorsPlot.png))
 
 **Fig 4*: Sensors Plot*
 
