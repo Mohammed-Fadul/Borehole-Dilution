@@ -201,16 +201,19 @@ the given data. They are:
 * `sensors_plot`: generates the plot of Fluorescence vs Concentration for each sensor.
 
 ![alt text](SensorsPlot.png)
+
 **Fig 4*: Sensors Plot*
 
 * `time_concentration_plot`: generates the plot of the Time vs Fluorescence for each sensor. 
 
 ![alt text](TimevsConcentration.png)
+
 **Fig 5*: Time vs Fluorescence Plot*
 
 * `velocity_plot`: generates the plot of the Darcy´s Velocity vs Time vs Fluorescence concentration for each sensor. 
 
 ![alt text](VelocityvsConcentration.png)
+
 **Fig 6*: Darcy´s Velocity vs Time vs Fluorescence Plot*
 
 The `plotSensors2.py` inherits the `plot_saver.py` which contains the function `save_plot` that allows the plot to be 
@@ -250,4 +253,4 @@ Darcy´s velocity result;
 | 4  | 25   | 51          | 52,11         | -2,84    | 0,008     |
 | ...| ...  | ...         | ...           | ...      |   ...     |
 
-7. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
+6. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
