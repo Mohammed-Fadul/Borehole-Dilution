@@ -1,12 +1,10 @@
 # Borehole-Dilution-Test
 
+Link to git repository to get the code:
 
-1.  Code description (purpose, motivation goals)
-2. usage/run instructions
-3. requirements (incl all non standard python libraries)
-4. code diagram (uml/activity diagram)
-5. usage of all functions incl classes (input arguements and output incl data types)
-
+```
+git clone https://github.com/Mohammed-Fadul/Borehole-Dilution-Test.git
+```
 
 ## Theoretical Background
 The borehole dilution test or point dilution test is a single-well technique for estimating horizontal flow velocity in the
@@ -72,30 +70,19 @@ flow, density effects, etc. can be neglected, the following relationship follows
 
 $$ {v_{f}} = -{V \over \alpha.F.t} ln{c \over c_{0}} $$
 
+
 ### Purpose and motivation
 
-Through this program, we want
-
-
-The structure of the code is as follows:
-
+The flow of groundwater is not measured directly through the sensors. The results obtained from the borehole dilution test are of the change in concentration of the tracer recorder over time, from which the velocity is calculated for each time step to generate the plot of velocity, from which the average Darcy velocity is calculated. The aim of this program is to generate the required plots and calculate the Darcy velocity from the data.
 
 
 ### Software Requirements
 
-The software requirements to successfully run this program and obtain the Darcy Velocity are:
+The software requirements to successfully run this program and obtain the Darcy Velocity are:    
 
-Link to git repository to get the code:
-
-```
-git clone https://github.com/Mohammed-Fadul/Borehole-Dilution-Test.git
-```
-    
-
-1. Anaconda navigator
-2. Integrated Development Environments (IDEs): PyCharm or Visual Studio Code (im not entirely sure)
-3. Python 3.9.16 or more recent versions
-4. Numpy and pandas
+1. Python 3.9.16 or more recent versions
+2. pip 22.3.1
+3. Non standard Python libraries: pathlib, logging, pandas, numpy, typing, sklearn, matplotlib, math
 
 ### Obtaining results
 
