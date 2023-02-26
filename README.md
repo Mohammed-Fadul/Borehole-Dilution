@@ -15,7 +15,7 @@ adjusted to limit any turbulence it might induce to the well tube area and shoul
 the surrounding aquifer. The dilution of the tracer in the well due to the inflow of fresh water and
 the outflow of tracer-laced water from the well is then measured over time.
 
-![alt text]([PrincipleBehindBDT.jpg](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/PrincipleBehindBDT.jpg))
+![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/PrincipleBehindBDT.jpg))
 **Fig 1*: Principle behind borehole dilution test*
 
 Traditionally, the horizontal Darcy velocity is calculated as a function of the rate
@@ -51,7 +51,7 @@ to account for this distortion:
 $$\alpha = Q_{b}/Q{f}$$
 
 
-![alt text]([WellScreenEffect.jpg](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/WellScreenEffect.jpg))
+![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/WellScreenEffect.jpg))
 
 *Fig 2: Illustration showing the flowlines around the well and the well screen effect*
 
