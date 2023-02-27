@@ -259,9 +259,9 @@ Darcy´s velocity result;
 ## Successful Run
 successful run of the code should show look like the following graphs: 
 
-![alt text](https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/seccessful_run.jpg))
+![alt text] (https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/seccessful_run.jpg))
 **Fig 6*: Extracting data correctly from the Excel sheet and starting execution*
 
-![alt text](https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/final_results.jpg))
+![alt text] (https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/final_results.jpg))
 **Fig 6*: Obtaining final results and saving plots, excel file and log file to the program directory*
 
