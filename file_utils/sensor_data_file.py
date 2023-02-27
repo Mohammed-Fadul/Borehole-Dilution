@@ -45,7 +45,7 @@ if the names of the data is changed in future in either of the files, it can be 
 in the code in the specific class for that data, without disturbing the other.
 """
             
-#authoured by Chinmayee
+#authoured by Geovana
 class SensorPairData(BaseFile):
     def __init__(
             self,
