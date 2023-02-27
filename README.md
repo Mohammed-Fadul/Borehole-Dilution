@@ -255,3 +255,7 @@ Darcy´s velocity result;
 | ...| ...  | ...         | ...           | ...      |   ...     |
 
 6. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
+
+## Successful Run
+successful run of the code should show look like the following graphs: 
+
