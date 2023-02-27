@@ -67,7 +67,7 @@ $$ {v_{f}} = -{V \over \alpha.F.t} ln{c \over c_{0}} $$
 
 ### Purpose and motivation
 
-The flow of groundwater is not measured directly through the sensors. The results obtained from the borehole dilution test are of the change in concentration of the tracer recorder over time, from which the velocity is calculated for each time step to generate the plot of velocity, from which the average Darcy velocity is calculated. The aim of this program is to generate the required plots to enable the user calculate Darcy's velocity via a graphical solution wich is the standard method, and to give instant estimate of the Darcy velocity from the data as a 50% percentile range.
+The flow of groundwater is not measured directly through the sensors. The results obtained from the borehole dilution test are of the change in concentration of the tracer recorder over time, from which the velocity is calculated for each time step to generate the plot of velocity, from which the average Darcy velocity is calculated. The aim of this program is to generate the required plots to enable the user calculate Darcy's velocity via a graphical solution which is the standard method, and to give instant estimate of the Darcy velocity from the data as a 50% percentile range.
 An example of the file can be seen in later sections.
 
 ### Software Requirements
