@@ -5,7 +5,7 @@ import numpy as np
 from typing import List
 from sklearn.linear_model import LinearRegression
 
-#classes to check if specified column names exists
+#Classes to check if specified column names exists
 class DataSheet:
     def __init__(self,
                  data_dataframe: pd.DataFrame,
@@ -56,6 +56,7 @@ class SensorPairData(BaseFile):
         self.__fc_cal_sheet_name = fc_cal_sheet_name
         self.__read_sensor_excel()
 
+#Method to read from excel files        
     def __read_sensor_excel(self):
         try:
             logging.debug('Taking information from the excel sheet...')
