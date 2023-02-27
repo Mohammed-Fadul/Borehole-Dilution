@@ -1,7 +1,7 @@
 from plot_settings.plot_saver import *
 import numpy as np
 
-
+#authored by Geovana Mosquera
 def sensors_plot(dc_data_cal, fc_data_cal):
     """
     :param dc_data_cal: data from the DC calibration
