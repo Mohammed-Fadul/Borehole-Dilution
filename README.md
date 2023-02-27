@@ -87,7 +87,11 @@ The software requirements to successfully run this program and obtain the Darcy 
        
 ### Obtaining results
 
-Upon meeting software requirements and getting all the python files in the local device, run the main script to get the an estimation of the velocity on
+Upon meeting software requirements and getting all the python files in the local device, run the main script
+```
+python main.py
+```
+to get the an estimation of the velocity on
 the console or the log file. Also, a new folder named (Plots) will appear in the directory where the program is saved that contains graphs generated from the given data. A new excel file contains all the calculated velocities will appear in the directory also a logfile containing the details of your run.
 
 There is already an excel file named (All_Data) in the folder (Input_data_workbook) containing a typical data from a field test as an example of how the user 
