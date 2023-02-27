@@ -120,7 +120,7 @@ velocity plots.
 
 The relation among the classes and functions are according to the following diagram:
 
-![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/flowchart(new).jpg)
+![alt text](https://github.com/Mohammed-Fadul/media/blob/a6d5d1b5823e1d292d988a7080570c4075761b29/Untitled%20Diagram.jpg)
 
 ### LOGGING FUNCTIONS
 ```{admonition} Code Requirements
