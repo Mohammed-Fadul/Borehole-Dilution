@@ -74,7 +74,7 @@ $$ {v_{f}} = -{V \over \alpha.F.t} ln{c \over c_{0}} $$
 ### Purpose and motivation
 
 The flow of groundwater is not measured directly through the sensors. The results obtained from the borehole dilution test are of the change in concentration of the tracer recorder over time, from which the velocity is calculated for each time step to generate the plot of velocity, from which the average Darcy velocity is calculated. The aim of this program is to generate the required plots to enable the user calculate Dyrcy's velocity via a graphical solution wich is the standard method, and to give insant estimate of the Darcy velocity from the data as a 50% percentile range.
-
+An example of the file 
 
 ### Software Requirements
 
@@ -93,26 +93,34 @@ The software requirements to successfully run this program and obtain the Darcy 
        
 ### Obtaining results
 
-Upon meeting software requirements and getting all the python files in the local device, run the main script to get the an estimation of the velocity.
-Also, the graphs generating from the given data are saved in the folder SamplePlots.
+Upon meeting software requirements and getting all the python files in the local device, run the main script to get the an estimation of the velocity on
+the console or the log file. Also, a new folder named (Plots) will appear in the directory where the program is saved that contains graphs generated from the given data. A new excel file contains all the calculated velocities will appear in the directory also a logfile containing the details of your run.
+
+There is already an excel file named (All_Data) in the folder (Input_data_workbook) containing a typical data from a field test as an example of how the user 
+should prepare his excel input file for reusing this code for other experiments.
 
 ## Code 
 
 ### Scripts  
 
-The object-oriented codes use custom classes that are called within a `main.py` script which calculates the Darcy´s 
-velocity average. The code is based on custom classes and functions that are defined as the following:
+The object-oriented codes use custom classes saved as packages that are called within a `main.py` script which calculates the Darcy´s velocity average. The code is based on custom classes and functions that are defined as the following:
 
+1-logging_parameters (Package) that contains:
 * `checker.py`: contains logging functions.
 
-* `tracertests.py`: contains a Tracer class to read the basic elements of borehole test from field data and make basic dimension
-calculations needed for the calculation of Darcy´s velocity.
+2-tracer_tests (Package) that contains:
+* `tracertests.py`: contains a Tracer class contains the basic elements of borehole test from field data as inputs and performs geometric calculations and obtains correction factors needed for the calculation of Darcy´s velocity.
 
-* `sensor_data_file.py`:contains the DataSheet, Calibration and SensorPairData classes to read the data from the 
-sensors.
+3-file_utils (Package) that contains:
+* `sensor_data_file.py`:contains the DataSheet, Calibration and SensorPairData classes to read the data from the sensors.
 
-* `plotSensors2.py`:contains the functions for the plots calculation: sensors plot, time concentration plot and 
-velocity plots
+4-plot_settings (Package) that contains:
+* `plotSensors2.py`:contains the functions for the plots calculation: sensors plot, time concentration plot and velocity plots.
+* `plot_saver.py`:contains a functions that creates a file named (Plots) and saves the result 
+plots in.
+
+5-plot_settings (Package) that contains:
+
 
 The relation among the classes and functions are according to the following diagram:
 
