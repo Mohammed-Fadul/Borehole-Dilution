@@ -259,13 +259,12 @@ are excluded giving a 50% of range.
 6. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
 
 ### Troubleshooting:
-This code is provided with many (safety) code lines that prevent your code run from crashing, for example division by zero errors, natural logarithms of negative values errors, etc. and the logging will provide you with details for each error.these errors are fixed within the run to provide the user with reliable results.
+This code is provided with many (safety) code lines that prevent your code run from crashing, for example division by zero errors, natural logarithms of negative values errors, etc. and the logging will provide you with details for each error,these errors are fixed within the code to provide the user with reliable results.
 
 Listed below are the major errors that you might run into:
 
 1. (Module_Not_Found ); this error happens when you are working in an environment that doesn’t contain all the required modules to run the code
-2. (Invalid inputs that track information from excel. Check them again) ; this message error appears when your input file doesn’t match the name or the location of the input file, this step is the most important in this code because if input file is not formatted properly the code will not be able to do any calculations
-3. other errors (while the code is able to run) can be found in the log file
-4. to make sure that your results are valid please check the generated curves and compare them with the samples provided in this README file or any previous tests
-that you trust.
+2. (Invalid inputs that track information from excel. Check them again) ; this message error appears when your input file doesn’t match the name or the location of the input file, this setup is the most important in this code because if the input file is not formatted properly the code will not be able to do any calculations
+3. Other errors (while the code is able to run); details can be found in the log file
+4. to make sure that your results are valid please check the generated curves and compare them with the samples provided in this README documentation or any previous tests that you trust.
 
