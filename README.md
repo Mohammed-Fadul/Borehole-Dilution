@@ -261,6 +261,7 @@ are excluded giving a 50% of range.
 This code is provided with many (safety) code lines that prevent your code run from crashing, for example division by zero errors, natural logarithms of negative values errors, etc. and the logging will provide you with details for each error.these errors are fixed within the run to provide the user with reliable results.
 
 Listed below are the major errors that you might run into:
+
 1-(Module_Not_Found ); this error happens when you are working in an environment that doesn’t contain all the required modules to runt the code.
 
 2-(Invalid inputs that track information from excel. Check them again) ; this message error appears when your input file doesn’t match the name or the location of the input file, this step is the most important in this code because if input file is not formatted properly the code will not be able to do any calculations.
