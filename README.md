@@ -131,7 +131,7 @@ Code Requirements: necessary to import the logging.
 ```
 The `checker.py` is made of two functions:
 1. `log_parameters`: contains all the basic configurations of the logging;
-2. `logger`: this is a function wrapper for the main() function that are going to execute logging messages throughout the code.
+2. `logger`: this returns the function wrapper for the main() function that are going to execute logging messages throughout the code.
 
 **Note** - The logging information are going to be saved in the file `logfile.log`.
 
