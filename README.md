@@ -237,11 +237,11 @@ are excluded giving a 50% of range.
 3. After having all the necessary inputs, it is called `darcys_velocity_each_second` with the required parameters for each type of sensor;
 4. The `darcys_velocity_averaged` is executed with a logging message that allows to know which type of sensor is this Darcy´s velocity result;
 
-![alt text](https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/final_results.jpg)
+![alt text](https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/final_results.jpg))
 
 **Fig 7*: Logging messages after running code*
 
-![alt text](https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/seccessful_run.jpg)
+![alt text](https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/seccessful_run.jpg))
 **Fig 8*: Logging messages after running code*
 
 5. When successfully runned, the information is saved in a excel file named **Results.xlsx** that looks like this:
