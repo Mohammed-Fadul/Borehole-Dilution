@@ -3,6 +3,11 @@ import numpy as np
 
 
 def sensors_plot(dc_data_cal, fc_data_cal):
+    """
+    :param dc_data_cal: data from the DC calibration
+    :param fc_data_cal: data from the FC calibration
+    :return: Sensors Plot
+    """
     fig, ax = plt.subplots()
 
     x = np.array(dc_data_cal['Flourescense'])
@@ -38,6 +43,11 @@ def sensors_plot(dc_data_cal, fc_data_cal):
 
 
 def time_concentration_plot(test_dc, test_fc):
+    """
+    :param test_dc: data from test DC
+    :param test_fc: data from test FC
+    :return: plot of Time vs Concentration
+    """
     fig, ax = plt.subplots()
 
     x = np.array(test_dc['Time'])
@@ -65,7 +75,11 @@ def time_concentration_plot(test_dc, test_fc):
 
 
 def velocity_plot(test_dc, test_fc):
-
+    """
+    :param test_dc: data from test DC
+    :param test_fc: data from test FC
+    :return: plot of Velocity vs Concentration vs Time
+    """
     x = np.array(test_dc['Time'])
     y = np.array(test_dc["vf(m/s)"])
     z = np.array(test_fc["Uranine(mg/l)"])
