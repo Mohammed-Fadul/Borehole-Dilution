@@ -1,5 +1,6 @@
 import logging
 
+#authored by Geovana Mosquera
 # logging information that is going to be used throughout the code
 def log_parameters():
     logging.basicConfig(filename="logfile.log", format='%(asctime)s - %(levelname)s - %(message)s',
