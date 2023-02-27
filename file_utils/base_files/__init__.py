@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-
+#class to check whether required data files exist
 class BaseFile:
     """
     :CLASS BaseFile:
