@@ -182,11 +182,9 @@ The provided sensors data is stored in the xlsx workbook **All_Data.xlsx** which
 
 In the excel file, the dilution time vs fluorescense table is located in the **Data DC** and **Data FC** sheet, giving information of each 
 sensor test. While, Flourescense vs Uranine table is located in the **DC calibration** and **FC calibration** sheet with the information of each sensor´s calibration. 
-
-* DataSheet: 
-* CalibrationSheet:
-* SensorPairData: 
-* Basefile 
+* Basefile: checks if the file to be opened exists  
+* DataSheet & CalibrationSheet: Two small classes are written to check the if the right column names exist in calibration and data files for both sensors. If the 
+* SensorPairData: After reading from the excel files, the calibration data is checked for linear correlation and the coefficient of determination is calculated
 
 ### PLOTS 
 ```{admonition} 
