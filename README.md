@@ -37,7 +37,7 @@ The software requirements to successfully run this program and obtain the Darcy 
       - matplotlib
       - pathlib
        
-### Obtaining results
+### Obtaining Results
 
 Upon meeting software requirements and getting all the python files in the local device, run the main script
 ```
