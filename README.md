@@ -186,9 +186,18 @@ The provided sensors data is stored in the xlsx workbook **All_Data.xlsx** which
 
 In the excel file, the dilution time vs fluorescense table is located in the **Data DC** and **Data FC** sheet, giving information of each 
 sensor test. While, Flourescense vs Uranine table is located in the **DC calibration** and **FC calibration** sheet with the information of each sensor´s calibration. 
-* `Basefile`: checks if the file to be opened exists  
-* `DataSheet` & `CalibrationSheet`: Two small classes are written to check the if the right column names exist in calibration and data files for both sensors. If the 
-* `SensorPairData`: After reading from the excel files, the calibration data is checked for linear correlation and the coefficient of determination is calculated
+1. `Basefile`: checks if the file to be opened exists
+2. `DataSheet` & `CalibrationSheet`: Two small classes are written to check the if the right column names exist in calibration and data files for both sensors.
+      * They takes in a Pandas DataFrame object (`data_dataframe`) and a list of column names, parameters, that should be present in the DataFrame. 
+      * The __init__ method initializes the object by assigning the input parameters to the class variables `parameters` and `combined_data_dataframe`, and then calls the `__verify_parameters` method to ensure that all the column names specified in parameters are present in combined_data_dataframe.
+      * If any of the specified column names are not present, an exception is raised.
+      * The `__verify_parameters` method checks if each parameter in parameters is present in`combined_data_dataframe.columns`, and if not, raises an exception with an error message that specifies the invalid column names.
+
+3. `SensorPairData`: After reading from the excel files, the calibration data is checked for linear correlation and the coefficient of determination is calculated
+      * inherits from a `BaseFile` class
+      * The SensorPairData class takes in a name and a filepath as input parameters, along with optional parameters specifying the names of different sheets in the             Excel file that contain data and calibration information. The `__init__` method initializes the object by assigning the input parameters to class             variables and then calling the `__read_sensor_excel` method to read the data and calibration sheets from the Excel           file.
+      * `__read_sensor_excel`: reads the data and calibration sheets from the Excel file specified by filepath using Pandas read_excel method. It then creates instances of `DataSheet` and `CalibrationSheet` classes to store the data and calibration information, respectively.
+      * `check_calibration`: checks the calibration data for both FC and DC sensors by calling the __check_sub_cal method with the calibration data as input. The __check_sub_cal method calculates the coefficient of determination (R-squared) for the calibration data using linear regression and returns the regression equation for the calibration data in the form y = mx + b, where m is the slope and b is the y-intercept.
 
 ### PLOTS 
 ```{admonition} 
