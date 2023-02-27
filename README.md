@@ -232,8 +232,7 @@ The darcy´s velocity is calculated in the `main.py` script. In this file we can
 * `darcys_velocity_each_second`: this function returns the data frame containing the final darcy´s velocity of each time. 
 It receives the field_data, the slope of the sensor´s equation and intercept of the sensor´s equation as parameters. 
 
-* `darcys_velocity_averaged`: this function returns the averaged Darcy´s velocity, and 25% of the lower and upper values 
-are excluded giving a 50% of range.
+* `darcys_velocity_averaged`: this function returns the averaged Darcy´s velocity as a 50% percentile range (excluding upper and lowwer 25% of the values).
 
 * `main`: the main function is responsible for calling the functions in the correct order: 
 1. This fuction sets the document´s information (**All_Data.xlsx**) where all the necessary data to execute the 
