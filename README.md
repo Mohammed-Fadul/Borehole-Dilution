@@ -108,19 +108,19 @@ The object-oriented codes use custom classes that are called within a `main.py` 
 velocity average. The code is based on custom classes and functions that are defined in the following files:
 
 1-logging_parameters (package) that contains:
-* `checker.py`: contains logging functions;
+* `checker.py`: contains logging functions
 
 2-tracer_tests (package) that contains:
 * `tracertests.py`: contains a Tracer class to read the basic elements of borehole test from field data, and make the ordinary
-calculations needed for the calculation of Darcy´s velocity;
+calculations needed for the calculation of Darcy´s velocity
 
 3-file_utiles (package) that contains:
 * `sensor_data_file.py`: contains the DataSheet, Calibration and SensorPairData classes to read the data from the 
-sensors;
+sensors
 
 4-plot_settings (package) that contains:
 * `plotSensors2.py`: contains the functions for the plots calculation - sensors plot, time concentration plot and 
-velocity plots.
+velocity plots;
 * `plot_saver.py`: contains a function to create a file to save plots in
 
 The relation among the classes and functions are according to the following diagram:
