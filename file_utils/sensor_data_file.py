@@ -15,7 +15,8 @@ class DataSheet:
         self.combined_data_dataframe = data_dataframe
         self.__verify_parameters()
         self.data = self.combined_data_dataframe
-
+        
+#raises error if specified column names are invalid or do not exist
     def __verify_parameters(self):
         if not all([param in self.combined_data_dataframe.columns for param in self.parameters]):
             raise Exception(logging.error(f"Invalid column names for parameters: {self.parameters}"))
@@ -30,11 +31,16 @@ class CalibrationSheet:
         self.__verify_parameters()
         self.data = self.combined_calibration_dataframe
 
+#raises error if specified column names are invalid or do not exist        
     def __verify_parameters(self):
         if not all([param in self.combined_calibration_dataframe.columns for param in self.parameters]):
             raise Exception(logging.error(f"Invalid column names for parameters: {self.parameters}"))
 
-#Separate classes have be written for field data and calibration data so that if the names of the data is changed in future in either of the files, it can be altered in the code in the specific class for that data, without disturbing the other
+"""
+Separate classes have be written for field data and calibration data so that 
+if the names of the data is changed in future in either of the files, it can be altered 
+in the code in the specific class for that data, without disturbing the other.
+"""
             
 #authoured by Chinmayee
 class SensorPairData(BaseFile):
