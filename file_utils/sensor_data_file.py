@@ -5,6 +5,7 @@ import numpy as np
 from typing import List
 from sklearn.linear_model import LinearRegression
 
+#classes to check if specified column names exists
 class DataSheet:
     def __init__(self,
                  data_dataframe: pd.DataFrame,
@@ -33,6 +34,9 @@ class CalibrationSheet:
         if not all([param in self.combined_calibration_dataframe.columns for param in self.parameters]):
             raise Exception(logging.error(f"Invalid column names for parameters: {self.parameters}"))
 
+#Separate classes have be written for field data and calibration data so that if the names of the data is changed in future in either of the files, it can be altered in the code in the specific class for that data, without disturbing the other
+            
+#authoured by Chinmayee
 class SensorPairData(BaseFile):
     def __init__(
             self,
@@ -64,7 +68,7 @@ class SensorPairData(BaseFile):
                              f'\n{self.__dc_data_sheet_name},\n{self.__fc_data_sheet_name},'
                              f'\n{self.__dc_cal_sheet_name},\n{self.__fc_cal_sheet_name}')
 
-#       Write the data and calibration sheets to `DataSheet` and `CalibrationSheet` classes
+#Write the data and calibration sheets to `DataSheet` and `CalibrationSheet` classes
         self.dc_data = DataSheet(data_dataframe=self.dc_data)
         self.fc_data = DataSheet(data_dataframe=self.fc_data)
         self.dc_cal_data = CalibrationSheet(calibration_dataframe=self.dc_cal_data)
@@ -82,7 +86,7 @@ class SensorPairData(BaseFile):
         }
 
 
-
+#Calculation of Coefficient of determination of the calibration data
     def __check_sub_cal(
             self,
             in_data: pd.DataFrame,
@@ -90,7 +94,6 @@ class SensorPairData(BaseFile):
     ):
         x = in_data["Flourescense"].values.reshape(-1, 1)
         y = in_data["Concentration"]
-        # x = np.reshape(x, (-1, 1))
         self.model = LinearRegression().fit(x, y)
         r_sq = self.model.score(x, y)
         logging.info(f"CALIBRATION : Coefficient of Determination: \t {r_sq}")
