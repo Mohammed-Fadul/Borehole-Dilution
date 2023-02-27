@@ -270,4 +270,5 @@ Listed below are the major errors that you might run into:
 2. (Invalid inputs that track information from excel. Check them again) ; this message error appears when your input file doesn’t match the name or the location of the input file, this setup is the most important in this code because if the input file is not formatted properly the code will not be able to do any calculations
 3. Other errors (while the code is able to run); details can be found in the log file
 4. to make sure that your results are valid please check the generated curves and compare them with the samples provided in this README documentation or any previous tests that you trust.
+5. BaseFileERROR: if file does not exist or exists in a different name. Check the names of column and file names for spelling.
 
