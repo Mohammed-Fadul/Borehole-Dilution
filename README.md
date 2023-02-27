@@ -187,6 +187,9 @@ The provided sensors data is stored in the xlsx workbook **All_Data.xlsx** which
 In the excel file, the dilution time vs fluorescense table is located in the **Data DC** and **Data FC** sheet, giving information of each 
 sensor test. While, Flourescense vs Uranine table is located in the **DC calibration** and **FC calibration** sheet with the information of each sensor´s calibration. 
 1. `Basefile`: checks if the file to be opened exists
+      * accepts a filepath string as input.
+      * Provides several properties to retrieve information about the file such as filename, parent directory, and extension.
+      * `__set_filepath()`: verifies that the specified file exists before creating a Path object to represent the file. 
 2. `DataSheet` & `CalibrationSheet`: Two small classes are written to check the if the right column names exist in calibration and data files for both sensors.
       * They takes in a Pandas DataFrame object (`data_dataframe`) and a list of column names, parameters, that should be present in the DataFrame. 
       * The __init__ method initializes the object by assigning the input parameters to the class variables `parameters` and `combined_data_dataframe`, and then calls the `__verify_parameters` method to ensure that all the column names specified in parameters are present in combined_data_dataframe.
