@@ -256,6 +256,10 @@ are excluded giving a 50% of range.
 | ...| ...  | ...         | ...           | ...      |   ...     |
 
 6. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
+and the new files for the results and logging will be generated.
+
+![alt text](https://github.com/Mohammed-Fadul/media/blob/5df8364cf511e0f014c6c672aee74ba4981d6af4/generatedfiles.jpg)
+**Fig 9*: New generated files*
 
 ### Troubleshooting:
 This code is provided with many (safety) code lines that prevent your code run from crashing, for example division by zero errors, natural logarithms of negative values errors, etc. and the logging will provide you with details for each error,these errors are fixed within the code to provide the user with reliable results.
