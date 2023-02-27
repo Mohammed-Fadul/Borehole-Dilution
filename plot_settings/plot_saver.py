@@ -9,6 +9,12 @@ def save_plot(
         name: str = "plot",
         **kwargs
 ) -> bool:
+    """
+    :param folder_path: name of the folder to be created
+    :param plot: plot
+    :param name: name given to the image
+    :return: it saves the plots in the correct location
+    """
     try:
         # TODO: Save Plots
         try:
