@@ -6,6 +6,10 @@ Link to git repository to get the code:
 git clone https://github.com/Mohammed-Fadul/Borehole-Dilution-Test.git
 ```
 
+Link to web page:
+```
+https://mohammed-fadul.github.io/media.Mohammed-Fadul.github.io
+```
 ## Theoretical Background
 The borehole dilution test, or point dilution test, is a single-well technique for estimating horizontal flow velocity in the aquifer surrounding a well. The test is conducted by introducing a tracer into a well section and monitoring its decreasing concentration over time. A tracer is instantaneously injected into a borehole and is perfectly mixed within the borehole for the duration of testing in order to fulfill the ideal mixing condition. The dilution of the tracer in the well due to the inflow of fresh water and the outflow of tracer-laced water from the well is then measured over time.
 
