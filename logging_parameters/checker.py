@@ -3,6 +3,9 @@ import logging
 #authored by Geovana Mosquera
 # logging information that is going to be used throughout the code
 def log_parameters():
+    """
+    :return: the basic configurations that are going to be settled for the log messages 
+    """
     logging.basicConfig(filename="logfile.log", format='%(asctime)s - %(levelname)s - %(message)s',
                         filemode="w", level=logging.DEBUG)
     logging.getLogger().addHandler(logging.StreamHandler())
@@ -14,6 +17,10 @@ def log_parameters():
 
 
 def logger(func):
+    """
+    :param func: function being called as an argument
+    :return: the wrapped decorated function
+    """
     def wrapper(*args, **kwargs):
         print('Processing Data...')
         log_parameters()
