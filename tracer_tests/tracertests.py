@@ -1,7 +1,10 @@
 import numpy as np
 from logging_parameters.checker import *
 
-#authored by Mohammed Fadul
+ """
+ :# authored by Mohammed Fadul
+ """
+    
 class Tracer:
     def __init__(self):
         self.d1 = .2     # drilling diameter m
