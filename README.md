@@ -99,28 +99,24 @@ the console or the log file. Also, a new folder named (Plots) will appear in the
 There is already an excel file named (All_Data) in the folder (Input_data_workbook) containing a typical data from a field test as an example of how the user 
 should prepare his excel input file for reusing this code for other experiments.
 
+
 ## Code 
 
 ### Scripts  
 
-The object-oriented codes use custom classes saved as packages that are called within a `main.py` script which calculates the Darcy´s velocity average. The code is based on custom classes and functions that are defined as the following:
+The object-oriented codes use custom classes that are called within a `main.py` script which calculates the Darcy´s 
+velocity average. The code is based on custom classes and functions that are defined in the following files:
 
-1-logging_parameters (Package) that contains:
-* `checker.py`: contains logging functions.
+* `checker.py`: contains logging functions;
 
-2-tracer_tests (Package) that contains:
-* `tracertests.py`: contains a Tracer class contains the basic elements of borehole test from field data as inputs and performs geometric calculations and obtains correction factors needed for the calculation of Darcy´s velocity.
+* `tracertests.py`: contains a Tracer class to read the basic elements of borehole test from field data, and make the ordinary
+calculations needed for the calculation of Darcy´s velocity;
 
-3-file_utils (Package) that contains:
-* `sensor_data_file.py`:contains the DataSheet, Calibration and SensorPairData classes to read the data from the sensors.
+* `sensor_data_file.py`:contains the DataSheet, Calibration and SensorPairData classes to read the data from the 
+sensors;
 
-4-plot_settings (Package) that contains:
-* `plotSensors2.py`:contains the functions setting-up the three plots: sensors plot, time concentration plot and velocity plots.
-* `plot_saver.py`:contains a functions that creates a file named (Plots) and saves the result 
-plots in.
-
-5-Input_data_workbook (Directory) that contains: Input excel file prepared by the user for 
-which results will be calculated.
+* `plotSensors2.py`: contains the functions for the plots calculation - sensors plot, time concentration plot and 
+velocity plots.
 
 The relation among the classes and functions are according to the following diagram:
 
@@ -130,16 +126,17 @@ The relation among the classes and functions are according to the following diag
 ```{admonition} Code Requirements
 Code Requirements: necessary to import the logging.
 ```
-the `checker.py` is made of two functions:
-1. `log_parameters`:contains all the logging formats and characteristics; 
-2. `logger`: this is a function wrapper for the main() functions that are going to execute log messages throughout 
-the code.
+The `checker.py` is made of two functions:
+1. `log_parameters`:contains all the basic configurations of the logging;
+2. `logger`: this is a function wrapper for the main() function that are going to execute logging messages throughout the code.
+
+**Note** - The logging information are going to be saved in the file `logfile.log`.
 
 ### FIELD DATA 
 ```{admonition} 
-Code Requirements: necessary to import the numpy, and to take the logging_parameters function from the checker.py file.
+Code Requirements: necessary to import numpy library, and the logging_parameters function from the checker.py file.
 ```
-The `tracertests.py` provides us variables and methods, which are relevant to Darcy´s velocity calculation. 
+The `tracertests.py` file has the variables and the methods which are relevant to Darcy´s velocity calculation. 
 In the class `Tracer`, all the constant data taken from the local site test is found. They include: 
 * Drilling´s and well´s diameter;
 * Well´s head above ground level;
@@ -153,21 +150,21 @@ In the class `Tracer`, all the constant data taken from the local site test is f
 * Permeability of the aquifer formation;
 * Accuracy of the fluorescence sensor.
 
-By these information, we are able to execute calculations found in the different functions within the Tracer class.
-* Extra Function; Top gravel pack (`top_gravel_pack`): distance from the wellhead to the top of the gravel pack;
-* Extra Function; Top filter screen (`top_filter_screen`): distance from the wellhead to the top of the filter screen;
-* Water head (`water_head`): profile of the water in the well measured from the bottom of the well;
-* Volume in well (`volume_in_well`): the volume of the water in the well;
-* Area of flow (`area_of_flow`): are perpendicular to the flow direction;
-* Calculate alpha (`calculate_alpha`): correction factor borehole horizontal flow rate Qb and aquifer horizontal flow rate Qf;
-* Calculate vf (`calculate_vf`): area of the screen filter.
+By these information, it is possible to execute calculations found in the different functions within the Tracer class.
+* Top gravel pack (`top_gravel_pack`): returns the distance from the wellhead to the top of the gravel pack;
+* Top filter screen (`top_filter_screen`): returns the distance from the wellhead to the top of the filter screen;
+* Water head (`water_head`): returns the profile of the water in the well measured from the bottom of the well;
+* Volume in well (`volume_in_well`): returns the volume of the water in the well;
+* Area of flow (`area_of_flow`):returns the area perpendicular to the flow direction;
+* Calculate alpha (`calculate_alpha`): returns the correction factor borehole horizontal flow rate Qb and aquifer horizontal flow rate Qf;
+* Calculate vf (`calculate_vf`): returns the area of the screen filter.
 
 ### SENSORS DATA 
 ```{admonition} 
-Code Requirements: necessary to import the logging, pandas, numpy, typing and sklearn libraries, and to inherit the file_utils 
+Code Requirements: necessary to import logging, pandas, numpy, typing and sklearn libraries, and to inherit the file_utils 
 from the BaseFile in __init__.py (packet base_files).
 ```
-The provided Sensors data is stored in the xlsx workbook **All_Data.xlsx** and it contains the following information:
+The provided sensors data is stored in the xlsx workbook **All_Data.xlsx** which contains the following information:
 
 | **dilution time(s)** | **fluorescense** |
 |----------------------|------------------|
@@ -184,9 +181,8 @@ The provided Sensors data is stored in the xlsx workbook **All_Data.xlsx** and i
 | 23               | 25               |
 | ...              | ...              |
 
-The dilution time vs fluorescense table is located in the **Data DC** and **Data FC** sheet, giving information of each 
-sensor test. While, Flourescense vs Uranine table is located in the **DC calibration** and **FC calibration** sheet which 
-there are information of the calibration for each sensor. 
+In the excel file, the dilution time vs fluorescense table is located in the **Data DC** and **Data FC** sheet, giving information of each 
+sensor test. While, Flourescense vs Uranine table is located in the **DC calibration** and **FC calibration** sheet with the information of each sensor´s calibration. 
 
 * DataSheet: 
 * CalibrationSheet:
@@ -198,51 +194,57 @@ there are information of the calibration for each sensor.
 Code Requirements: necessary to import logging, matplot and os libraries, and to inherit from the file plot_saver the function 
 save_plot.
 ```
-The `plotSensors2.py`generates three plots - based on the matplot library - that allow better analysis of
-the given data. They are:
-* `sensors_plot`: function that generates the plot of Fluorescence vs Concentration for each sensor.
 
-![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/SensorsPlot.png))
+The `plotSensors2.py` contains three functions with different outputs each: 
+
+1. `sensors_plot - the parameters of this function are the calibration data from each type of sensor, in which returns the plot of flourescence vs uranine;
+
+![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/SensorsPlot.png)
 
 **Fig 4*: Sensors Plot*
 
-* `time_concentration_plot`: function that generates the plot of the Time vs Fluorescence for each sensor. 
+2. `time_concentration_plot`- function that returs the plot of the Time vs Fluorescence for each sensor. the parameters are the tests results from each sensor.
 
-![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/TimevsConcentration.png))
+![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/TimevsConcentration.png)
 
 **Fig 5*: Time vs Fluorescence Plot*
 
-* `velocity_plot`: function that generates the plot of the Darcy´s Velocity vs Time vs Fluorescence concentration for each sensor. 
+3. `velocity_plot` - function that returns the plot of Darcy´s Velocity vs Time vs Fluorescence concentration for each sensor. The parameters are also the tests results frome each sensors plus the calculated Darcy´s velocity. 
 
-![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/VelocityvsConcentration.png))
+![alt text](https://github.com/Mohammed-Fadul/media/blob/1f13edbffc3d495676f5e8564559efb2529ebdd6/VelocityvsConcentration.png)
 
 **Fig 6*: Darcy´s Velocity vs Time vs Fluorescence Plot*
 
 The `plotSensors2.py` inherits the `plot_saver.py` which contains the function `save_plot` that allows the plot to be 
-correctly saved in the -named given - folder. It also returns logging information in case of exceptions. 
+correctly saved in the -named given - folder. It also returns logging information in case of exceptions. The arguments for the save_plot are the folder path, plot and the name of the image which are given when calling this function inside of each plot function. 
 
-NOTES: 
 
 ### DARCY´S VELOCITY CALCULATION 
 ```{admonition} 
-Code Requirements: necessary to import pandas and math libraries, and to inherit from the tracertests, sensor_data_file, 
-plotSensors2 and checker the necessary functions. 
+Code Requirements: necessary to import pandas and math libraries, and to inherit functions from the tracertests, sensor_data_file, 
+plotSensors2 and checker. 
 ```
-The darcy´s velocity is calculated in the `main.py` script. In this file we can find: 
+The Darcy´s velocity is calculated in the `main.py` script. In this file we can find: 
 * `darcys_velocity_each_second`: this function returns the data frame containing the final darcy´s velocity of each time. 
 It receives the field_data, the slope of the sensor´s equation and intercept of the sensor´s equation as parameters. 
 
-* `darcys_velocity_averaged`: this function returns the averaged Darcy´s velocity as a 50% percentile range (excluding upper and lowwer 25% of the values).
+* `darcys_velocity_averaged`: this function returns the Darcy´s velocity averaged, and 25% of the lower and upper values 
+are excluded giving a 50% of range.
 
 * `main`: the main function is responsible for calling the functions in the correct order: 
-1. This fuction sets the document´s information (**All_Data.xlsx**) where all the necessary data to execute the 
-`sensor_data_file.py` is required;
-2. The instantiation of the objects and attributes are saved in the variables which take the information also from 
+1. This fuction sets the document´s information (**All_Data.xlsx**), as parameters to the `sensor_data_file.py`;
+2. The instantiation of the objects and attributes are saved in variables which take the information also from 
 `sensor_data_file.py` (eg: regression line information, calibration information and sensors information);
-3. After having all the necessary inputs, it is called `darcys_velocity_each_second` with the necessary parameters for 
-each type of sensor;
-4. The `darcys_velocity_averaged` is executed with a logging message that allows to know which type of sensor is this 
-Darcy´s velocity result;
+3. After having all the necessary inputs, it is called `darcys_velocity_each_second` with the required parameters for each type of sensor;
+4. The `darcys_velocity_averaged` is executed with a logging message that allows to know which type of sensor is this Darcy´s velocity result;
+
+![alt text](https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/final_results.jpg)
+
+**Fig 7*: Logging messages after running code*
+
+![alt text](https://github.com/Mohammed-Fadul/media/blob/5af71239841c4bf1abf50a0fa0eb77d416d22d93/seccessful_run.jpg)
+**Fig 8*: Logging messages after running code*
+
 5. When successfully runned, the information is saved in a excel file named **Results.xlsx** that looks like this:
 
 |    | Time | Flourescense | Uranine(mg/l) | ln(c/c0) | vf(m/s)   |
@@ -255,7 +257,3 @@ Darcy´s velocity result;
 | ...| ...  | ...         | ...           | ...      |   ...     |
 
 6. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
-
-## Successful Run
-successful run of the code should show look like the following graphs: 
-
