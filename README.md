@@ -109,8 +109,8 @@ velocity average. The code is based on custom classes and functions that are def
 calculations needed for the calculation of Darcy´s velocity.
 
 3-file_utiles (package) that contains:
-* `sensor_data_file.py`: contains the DataSheet, Calibration and SensorPairData classes to read the data from the 
-sensors.
+* `base_file(package)`: contains `__init__.py file which contains class BaseFiles to check if data files exist
+* `sensor_data_file.py`: contains the DataSheet, Calibration and SensorPairData classes to read the data from the sensors.
 
 4-plot_settings (package) that contains:
 * `plotSensors2.py`: contains the functions for the plots calculation - sensors plot, time concentration plot and 
