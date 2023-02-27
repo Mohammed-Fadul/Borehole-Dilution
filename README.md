@@ -7,22 +7,15 @@ git clone https://github.com/Mohammed-Fadul/Borehole-Dilution-Test.git
 ```
 
 ## Theoretical Background
-The borehole dilution test or point dilution test is a single-well technique for estimating horizontal flow velocity in the aquifer surrounding a well. The test is conducted by introducing a tracer into a well section and monitoring its decreasing concentration over time. A tracer is instantaneously injected into a borehole and is perfectly mixed within the borehole for the duration of testing in order to fulfil the ideal mixing condition. The mixing intensity should be adjusted to limit any turbulence it might induce to the well tube area and should not affect flow in the surrounding aquifer. The dilution of the tracer in the well due to the inflow of fresh water and the outflow of tracer-laced water from the well is then measured over time.
+The borehole dilution test, or point dilution test, is a single-well technique for estimating horizontal flow velocity in the aquifer surrounding a well. The test is conducted by introducing a tracer into a well section and monitoring its decreasing concentration over time. A tracer is instantaneously injected into a borehole and is perfectly mixed within the borehole for the duration of testing in order to fulfill the ideal mixing condition. The dilution of the tracer in the well due to the inflow of fresh water and the outflow of tracer-laced water from the well is then measured over time.
 
-Traditionally, the horizontal Darcy velocity is calculated as a function of the rate of dilution and is based on the simple assumption that the decreasing tracer concentration is proportional both to the apparent velocity into the test section and to the Darcy velocity in the aquifer.
+Traditionally, the horizontal Darcy´s velocity is calculated as a function of the rate of dilution and is based on the simple assumption that the decreasing tracer concentration is proportional both to the apparent velocity into the test section and to the Darcy velocity in the aquifer.
 
-Horizontal flow patterns in an aquifer are distorted by boreholes due to the well screen effect. This effect is caused by convergence of the flow field due to contrasts in hydraulic conductivity between the aquifer and the inside of the well. A dimensionless correction factor $\alpha$ can be used to account for this distortion:
-
-$$\alpha = Q_{b}/Q{f}$$
-
-The correction factor $\alpha$ can be evaluated using potential theory as:
-
-$$ {\alpha} = {4 \over {1 + ({r_{1} \over r_{2}})^2 + {k_{1} \over k_{2}}{[1 - ({r_{1} \over r_{2}})^2]}}} $$
-
-with Darcy velocity vf and assuming other complicating factors related to insufficient mixing, vertical
-flow, density effects, etc. can be neglected, the following relationship follows:
+Assuming that other complicating factors related to insufficient mixing (vertical flow, density effects, etc.) can be neglected, the Darcy velocity vf follows the relationship of:
 
 $$ {v_{f}} = -{V \over \alpha.F.t} ln{c \over c_{0}} $$
+
+Alpha is a dimensioless factor that corrects the horizontal flow patterns created in the aquifer by boreholes due to the well screen effect. This effect is caused by convergence of the flow field due to contrasts in hydraulic conductivity between the aquifer and the inside of the well.
 
 
 ### Purpose and motivation
@@ -207,14 +200,3 @@ are excluded giving a 50% of range.
 
 6. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
 and the new files for the results and logging will be generated.
-
-### Troubleshooting:
-This code is provided with many (safety) code lines that prevent your code run from crashing, for example division by zero errors, natural logarithms of negative values errors, etc. and the logging will provide you with details for each error,these errors are fixed within the code to provide the user with reliable results.
-
-Listed below are the major errors that you might run into:
-
-1. (Module_Not_Found ); this error happens when you are working in an environment that doesn’t contain all the required modules to run the code
-2. (Invalid inputs that track information from excel. Check them again) ; this message error appears when your input file doesn’t match the name or the location of the input file, this setup is the most important in this code because if the input file is not formatted properly the code will not be able to do any calculations
-3. Other errors (while the code is able to run); details can be found in the log file
-4. to make sure that your results are valid please check the generated curves and compare them with the samples provided in this README documentation or any previous tests that you trust.
-5. BaseFileERROR: if file does not exist or exists in a different name. Check the names of column and file names for spelling.
