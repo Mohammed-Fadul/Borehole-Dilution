@@ -5,6 +5,7 @@ import numpy as np
 from typing import List
 from sklearn.linear_model import LinearRegression
 
+#authoured by Chinmayee
 #Classes to check if specified column names exists
 #list of column names are assigned to parameters
 class DataSheet:
@@ -45,7 +46,7 @@ if the names of the data is changed in future in either of the files, it can be 
 in the code in the specific class for that data, without disturbing the other.
 """
             
-#authoured by Geovana
+#authoured by Chinmayee
 class SensorPairData(BaseFile):
     def __init__(
             self,
