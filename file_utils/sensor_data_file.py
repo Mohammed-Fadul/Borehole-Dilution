@@ -49,8 +49,8 @@ in the code in the specific class for that data, without disturbing the other.
 class SensorPairData(BaseFile):
     def __init__(
             self,
-            name: str,
-            filepath: str,
+            name: str, 
+            filepath: str, 
             dc_data_sheet_name: str = "Data DC",
             fc_data_sheet_name: str = "Data FC",
             dc_cal_sheet_name: str = "DC_calibration",
@@ -78,7 +78,7 @@ class SensorPairData(BaseFile):
                              f'\n{self.__dc_data_sheet_name},\n{self.__fc_data_sheet_name},'
                              f'\n{self.__dc_cal_sheet_name},\n{self.__fc_cal_sheet_name}')
 
-#Write the data and calibration sheets to `DataSheet` and `CalibrationSheet` classes
+#Write the data and calibration sheets to `DataSheet` and `CalibrationSheet` instances
         self.dc_data = DataSheet(data_dataframe=self.dc_data)
         self.fc_data = DataSheet(data_dataframe=self.fc_data)
         self.dc_cal_data = CalibrationSheet(calibration_dataframe=self.dc_cal_data)
