@@ -6,6 +6,7 @@ from typing import List
 from sklearn.linear_model import LinearRegression
 
 #Classes to check if specified column names exists
+#list of column names are assigned to parameters
 class DataSheet:
     def __init__(self,
                  data_dataframe: pd.DataFrame,
@@ -16,7 +17,8 @@ class DataSheet:
         self.__verify_parameters()
         self.data = self.combined_data_dataframe
         
-#raises error if specified column names are invalid or do not exist
+#checks if assigned column names exist in the file
+#raises error if specified column names are invalid
     def __verify_parameters(self):
         if not all([param in self.combined_data_dataframe.columns for param in self.parameters]):
             raise Exception(logging.error(f"Invalid column names for parameters: {self.parameters}"))
@@ -31,6 +33,7 @@ class CalibrationSheet:
         self.__verify_parameters()
         self.data = self.combined_calibration_dataframe
 
+#checks if assigned column names exist in the file
 #raises error if specified column names are invalid or do not exist        
     def __verify_parameters(self):
         if not all([param in self.combined_calibration_dataframe.columns for param in self.parameters]):
