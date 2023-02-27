@@ -59,8 +59,8 @@ The correction factor $\alpha$ can be evaluated using potential theory as:
 
 $$ {\alpha} = {4 \over {1 + ({r_{1} \over r_{2}})^2 + {k_{1} \over k_{2}}{[1 - ({r_{1} \over r_{2}})^2]}}} $$
 
-with screen radii r1 and r2, screen permeability k1, and formation permeability k2. For the wells at
-the site in Horkheim, the dimensions of the gravel filter and the screen/filter tube can be neglected,
+with screen radii r1 and r2, screen permeability k1, and formation permeability k2. For simpilification,
+the dimensions of the gravel filter and the screen/filter tube can be neglected,
 and $\alpha = 2$. Considering:
 
 $$ {v_{app}} = {v_{f} \alpha} $$
@@ -73,7 +73,7 @@ $$ {v_{f}} = -{V \over \alpha.F.t} ln{c \over c_{0}} $$
 
 ### Purpose and motivation
 
-The flow of groundwater is not measured directly through the sensors. The results obtained from the borehole dilution test are of the change in concentration of the tracer recorder over time, from which the velocity is calculated for each time step to generate the plot of velocity, from which the average Darcy velocity is calculated. The aim of this program is to generate the required plots and calculate the Darcy velocity from the data.
+The flow of groundwater is not measured directly through the sensors. The results obtained from the borehole dilution test are of the change in concentration of the tracer recorder over time, from which the velocity is calculated for each time step to generate the plot of velocity, from which the average Darcy velocity is calculated. The aim of this program is to generate the required plots to enable the user calculate Dyrcy's velocity via a graphical solution wich is the standard method, and to give insant estimate of the Darcy velocity from the data as a 50% percentile range.
 
 
 ### Software Requirements
@@ -81,36 +81,19 @@ The flow of groundwater is not measured directly through the sensors. The result
 The software requirements to successfully run this program and obtain the Darcy Velocity are:    
 
 1. Python 3.9.16 or more recent versions
-2. pip 22.3.1
-3. Virtual environment: flussenv
-    channels:
-      - conda-forge
-      - defaults
-      - blaze
-      - anaconda
-
-    dependencies:
-      - python>=3.8
-      - pip
-      - tabulate
-      - ipykernel
-       
-    scientific python
+2. libraries/modules:
       - numpy
       - pandas
       - os (Miscellaneous operating system interfaces)
       - math
       - typing
       - sklearn
-       
-    plotting
       - matplotlib
       - pathlib
-      
-      
+       
 ### Obtaining results
 
-Upon meeting software requirements and getting all the python files in the local device, run the main script to get the velocity.
+Upon meeting software requirements and getting all the python files in the local device, run the main script to get the an estimation of the velocity.
 Also, the graphs generating from the given data are saved in the folder SamplePlots.
 
 ## Code 
