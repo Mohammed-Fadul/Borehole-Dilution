@@ -99,7 +99,8 @@ class SensorPairData(BaseFile):
             in_data: pd.DataFrame,
             return_coeffs: bool = True
     ):
-        x = in_data["Flourescense"].values.reshape(-1, 1)
+        x = in_data["Flourescense"].values.reshape(-1, 1) 
+        #reshape(-1, 1) is used to change 1D array to 2D array that is needed by the LineraRegression function
         y = in_data["Concentration"]
         self.model = LinearRegression().fit(x, y)
         r_sq = self.model.score(x, y)
