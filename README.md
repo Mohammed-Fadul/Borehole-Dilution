@@ -115,12 +115,12 @@ The object-oriented codes use custom classes saved as packages that are called w
 * `sensor_data_file.py`:contains the DataSheet, Calibration and SensorPairData classes to read the data from the sensors.
 
 4-plot_settings (Package) that contains:
-* `plotSensors2.py`:contains the functions for the plots calculation: sensors plot, time concentration plot and velocity plots.
+* `plotSensors2.py`:contains the functions setting-up the three plots: sensors plot, time concentration plot and velocity plots.
 * `plot_saver.py`:contains a functions that creates a file named (Plots) and saves the result 
 plots in.
 
-5-plot_settings (Package) that contains:
-
+5-Input_data_workbook (Directory) that contains: Input excel file prepared by the user for 
+which results will be calculated.
 
 The relation among the classes and functions are according to the following diagram:
 
