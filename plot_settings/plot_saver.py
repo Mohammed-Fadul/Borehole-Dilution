@@ -2,7 +2,7 @@ import logging
 import matplotlib.pyplot as plt
 import os
 
-
+#authored by Geovana Mosquera
 def save_plot(
         folder_path: str,
         plot: plt,
