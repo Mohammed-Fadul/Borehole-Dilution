@@ -154,8 +154,8 @@ In the class `Tracer`, all the constant data taken from the local site test is f
 * Accuracy of the fluorescence sensor.
 
 By these information, we are able to execute calculations found in the different functions within the Tracer class.
-* Top gravel pack (`top_gravel_pack`): distance from the wellhead to the top of the gravel pack;
-* Top filter screen (`top_filter_screen`): distance from the wellhead to the top of the filter screen;
+* Extra Function; Top gravel pack (`top_gravel_pack`): distance from the wellhead to the top of the gravel pack;
+* Extra Function; Top filter screen (`top_filter_screen`): distance from the wellhead to the top of the filter screen;
 * Water head (`water_head`): profile of the water in the well measured from the bottom of the well;
 * Volume in well (`volume_in_well`): the volume of the water in the well;
 * Area of flow (`area_of_flow`): are perpendicular to the flow direction;
