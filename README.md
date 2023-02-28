@@ -11,15 +11,15 @@ Link to web page:
 https://mohammed-fadul.github.io/media.Mohammed-Fadul.github.io
 ```
 ## Theoretical Background
-The borehole dilution test, or point dilution test, is a single-well technique for estimating horizontal flow velocity in the aquifer surrounding a well. The test is conducted by introducing a tracer into a well section and monitoring its decreasing concentration over time. A tracer is instantaneously injected into a borehole and is perfectly mixed within the borehole for the duration of testing in order to fulfill the ideal mixing condition. The dilution of the tracer in the well due to the inflow of fresh water and the outflow of tracer-laced water from the well is then measured over time.
+The borehole dilution test, or point dilution test, is a single-well test for calculating Darcy velocity in aquifers. A tracer is introduced into a well section and its change in concentration is recorded over time. To achieve the proper mixing conditions, a tracer is introduced into a borehole and mixed there during the testing process. Over time, the dilution of the tracer caused by the entry of fresh water and the outflow of water mixed with tracer from the wellis monitored.<sup>[1][2]
 
-Traditionally, the horizontal Darcy´s velocity is calculated as a function of the rate of dilution and is based on the simple assumption that the decreasing tracer concentration is proportional both to the apparent velocity into the test section and to the Darcy velocity in the aquifer.
+The tradiotional method of calculating the Darcy´s velocity as a function of dilution rate is that decreasing concentration of tracer is proportional to both, the apparant velocity in the test section and The Darcy velocity.<sup>[1][2]
 
-Assuming that other complicating factors related to insufficient mixing (vertical flow, density effects, etc.) can be neglected, the Darcy velocity vf follows the relationship of:
+Assuming that factors related to insufficient mixing (density effects, vertical flow, etc.) can be neglected, the Darcy velocity vf follows the relationship of:
 
 $$ {v_{f}} = -{V \over \alpha.F.t} ln{c \over c_{0}} $$
 
-Alpha is a dimensioless factor that corrects the horizontal flow patterns created in the aquifer by boreholes due to the well screen effect. This effect is caused by convergence of the flow field due to contrasts in hydraulic conductivity between the aquifer and the inside of the well.
+Alpha is a dimensioless factor that corrects the horizontal flow patterns created in the aquifer by boreholes due to the well screen effect. The well screen effect is caused by convergence of flow field because of differences in hydraulic conductivity between the aquifer and the well.
 
 
 ### Purpose and motivation
@@ -204,3 +204,10 @@ are excluded giving a 50% of range.
 
 6. Last, the plots are executed when calling the functions `velocity_plot`, `time_concentration_plot` and `sensors_plot` with the corrected parameters.
 and the new files for the results and logging will be generated.
+
+
+*References*
+1. L. Piccinini, P. Fabbri & M. Pola. (2016). Point dilution tests to calculate groundwater velocity: an example in a porous aquifer in northeast Italy, Hydrological Sciences Journal, 1-2
+2. Radulović, M.M., Poleksić, S. & Blagojević, M. A modified point dilution test for the assessment of groundwater flux in karst aquifers. Environ Earth Sci 78, 473 (2019). https://doi.org/10.1007/s12665-019-8489-4
+3. Zhang, Y., Wang, H., Zhang, X., Dong, H. (2020). Groundwater velocity determination by single-borehole dilution test, IOP Conference Series Earth and Environmental Science 525(1):012175, 1
+4. Lecture notes, Field Course Hydrogeology
