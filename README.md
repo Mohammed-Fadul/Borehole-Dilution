@@ -11,15 +11,15 @@ Link to web page:
 https://mohammed-fadul.github.io/media.Mohammed-Fadul.github.io
 ```
 ## Theoretical Background
-The borehole dilution test, or point dilution test, is a single-well test for calculating Darcy velocity in aquifers. A tracer is introduced into a well section and its change in concentration is recorded over time. To achieve the proper mixing conditions, a tracer is introduced into a borehole and mixed there during the testing process. Over time, the dilution of the tracer caused by the entry of fresh water and the outflow of water mixed with tracer from the wellis monitored.<sup>[1][2]
+The borehole dilution test, or point dilution test, is a single-well test for calculating Darcy velocity in aquifers. A tracer is introduced into a well section and its change in concentration is recorded over time. To achieve the proper mixing conditions, a tracer is introduced into a borehole and mixed there during the testing process. Over time, the dilution of the tracer caused by the entry of fresh water and the outflow of water mixed with tracer from the wellis monitored.<sup>[1][2][3]
 
-The tradiotional method of calculating the Darcy´s velocity as a function of dilution rate is that decreasing concentration of tracer is proportional to both, the apparant velocity in the test section and The Darcy velocity.<sup>[1][2]
+The tradiotional method of calculating the Darcy´s velocity as a function of dilution rate is that decreasing concentration of tracer is proportional to both, the apparant velocity in the test section and The Darcy velocity.<sup>[1][2][3]
 
 Assuming that factors related to insufficient mixing (density effects, vertical flow, etc.) can be neglected, the Darcy velocity vf follows the relationship of:
 
 $$ {v_{f}} = -{V \over \alpha.F.t} ln{c \over c_{0}} $$
 
-Alpha is a dimensioless factor that corrects the horizontal flow patterns created in the aquifer by boreholes due to the well screen effect. The well screen effect is caused by convergence of flow field because of differences in hydraulic conductivity between the aquifer and the well.
+Alpha is a dimensioless factor that corrects the horizontal flow patterns created in the aquifer by boreholes due to the well screen effect. The well screen effect is caused by convergence of flow field because of differences in hydraulic conductivity between the aquifer and the well.<sup>[1][2][3]
 
 
 ### Purpose and motivation
